@@ -2,13 +2,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: #0D1117;
+  background-color: #0d1117;
 }
 
 .letters-container-wrap {
@@ -17,17 +18,18 @@ body {
 }
 
 .letters-container {
+  display: flex;
+  flex-direction: column;
   max-width: fit-content;
   color: white;
   font-size: 3rem;
 }
 
-.letter-line{
-
+.letters-line {
+  display: inline-flex;
 }
 
 .letter:hover {
   cursor: pointer;
   color: green;
 }
-
