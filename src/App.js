@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [ patternNumber, setPatternNumber ] = useState(null);
+  const [ patternNumber, setPatternNumber ] = useState(1);
 
   return (
     <div className="App">
