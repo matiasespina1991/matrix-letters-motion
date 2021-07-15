@@ -1,0 +1,10 @@
+[
+    {
+        "id": "1",
+        "pattern": "ABCDEFGHIJ/KLMNOPQRST/UVWXYZ1234"
+    },
+    {
+        "id": "2",
+        "pattern": "KLMNOPQRST/UVWXYZ1234/ABCDEFGHIJ"
+    }
+]

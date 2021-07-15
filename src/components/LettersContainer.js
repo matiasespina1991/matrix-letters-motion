@@ -1,17 +1,19 @@
-function LettersContainer() {
+import patternsJSON from './data.json';
+
+function LettersContainer(patternNumber, setPatternNumber) {
 
     let lettersString = "ABCDEFGHIJ/KLMNOPQRST/UVWXYZ1234";
     const lettersBreakSplit = lettersString.split("/");
 
     return (
-        <div class="letters-container-wrap">
-            <div class="letters-container">
+        <div className="letters-container-wrap">
+            <div className="letters-container">
                 {
                     lettersBreakSplit.map(
-                        function(line) {
-                            return <div class="letters-line">
+                        function(line, id) {
+                            return <div key={id} className="letters-line">
                                 {line.split('').map(
-                                                    (letter) => <div class="letter">{letter}</div>
+                                                    (letter, id) => <div key={id} className="letter">{letter}</div>
                                                 )
                                 }
                             </div>
