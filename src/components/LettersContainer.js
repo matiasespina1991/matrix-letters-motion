@@ -6,6 +6,37 @@ function LettersContainer(patternNumber, setPatternNumber) {
     const lettersBreakSplit = lettersString.split("/");
 
     return (
+            <>
+                <div className="letters-container-wrap">
+                    {
+                        patternsJSON.map(
+                            data => (
+                                <div>{data.pattern}</div>
+                            )
+                        )
+                    }
+                </div>
+
+            {}
+                {/* <div className="letters-container-wrap">
+                    <div className="letters-container">
+                        {
+                            lettersBreakSplit.map(
+                                function(line, id) {
+                                    return <div key={id} className="letters-line">
+                                        {line.split('').map(
+                                                            (letter, id) => <div key={id} className="letter">{letter}</div>
+                                                        )
+                                        }
+                                    </div>
+                                } 
+                            )
+                        }
+                    </div>
+                </div> */}
+
+
+{/*         
         <div className="letters-container-wrap">
             <div className="letters-container">
                 {
@@ -21,7 +52,8 @@ function LettersContainer(patternNumber, setPatternNumber) {
                     )
                 }
             </div>
-        </div>
+        </div> */}
+            </>
     )
 }
 
